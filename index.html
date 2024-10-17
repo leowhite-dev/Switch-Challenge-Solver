@@ -1,23 +1,22 @@
 <!doctype html>
-<!-- language your page use-->
 <html lang="en-US">
-<!-- or
-<html lang="zh-cn">
-if use Chinese more, this attribute can be specified in element individually.
--->
   <head>
     <meta charset="utf-8">
 		<meta name="author" content="Leo White">
 		<meta
 			name="description"
 			content="This project implements a web page to help users solve the 'Switch Challenge' provided by AON for P&G.">
-		<link rel="stylesheet" href="css/style.css">
-		<script src="my-js-file.js" defer></script>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js" defer></script>
 
     <title>Switch Challenge Solver</title>
   </head>
   <body>
 		<h1>Hello!</h1>
 		<h2>Github Pages</h2>
+		<label for="initial-state">Initial state:</label>
+		<input id="initial-state" type="text" maxlength="4" pattern="[rgby]{4}" required>
+		<span id="error-message" style="display: none; color: red;">输入不符合规范</span>
+		
   </body>
 </html>
