@@ -1,23 +1,36 @@
 <!doctype html>
-<!-- language your page use-->
-<html lang="en-US">
-<!-- or
-<html lang="zh-cn">
-if use Chinese more, this attribute can be specified in element individually.
--->
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
 		<meta name="author" content="Leo White">
 		<meta
 			name="description"
 			content="This project implements a web page to help users solve the 'Switch Challenge' provided by AON for P&G.">
-		<link rel="stylesheet" href="css/style.css">
-		<script src="my-js-file.js" defer></script>
+		<link rel="stylesheet" href="style.css">
 
-    <title>Switch Challenge Solver</title>
-  </head>
-  <body>
-		<h1>Hello!</h1>
-		<h2>Github Pages</h2>
-  </body>
+		<title>Switch Challenge Solver</title>
+	</head>
+
+	<body>
+		<form action="">
+			<fieldset>
+				<legend>State Information</legend>
+				<p>
+					<label for="initial-state">Initial State:</label>
+					<input type="text" id="initial-state" name="initial-state" required>
+				</p>
+				<p>
+					<label for="final-state">Final State:</label>
+					<input type="text" id="final-state" name="final-state" required>
+				</p>
+				<p>
+					<button>Submit</button>
+				</p>
+			</fieldset>
+
+		</form>
+
+	</body>
+
 </html>
